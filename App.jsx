@@ -134,7 +134,6 @@ const App = () => {
     }
   }, [selectedFile]);
 
-  // Clears the current selection and result
   const handleReset = useCallback(() => {
     setSelectedFile(null);
     setPreviewUrl(null);
@@ -146,7 +145,7 @@ const App = () => {
     if (fileInput) fileInput.value = '';
   }, []);
 
-  // --- UI Components ---
+
 
   const PredictionResult = ({ prediction }) => (
     <div className={`mt-6 p-6 rounded-xl shadow-lg border-l-4 ${prediction.colorClass.replace(/text-|bg-/g, 'border-')}`}>
@@ -175,7 +174,7 @@ const App = () => {
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 sm:p-8 font-sans">
       <div className="w-full max-w-4xl bg-white p-6 sm:p-10 rounded-3xl shadow-2xl transition-all duration-300">
         
-        {/* Header */}
+
         <header className="text-center mb-8">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-indigo-700 tracking-tight">
             Diabetic Retinopathy Screening
@@ -187,7 +186,7 @@ const App = () => {
 
         <div className="flex flex-col md:flex-row gap-8">
           
-          {/* Image Upload Area */}
+      
           <div className="md:w-1/2">
             <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
               <Camera className="w-5 h-5 mr-2 text-indigo-500" />
@@ -229,14 +228,14 @@ const App = () => {
             </div>
           </div>
 
-          {/* Action and Result Area */}
+     
           <div className="md:w-1/2">
             <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
               <Scan className="w-5 h-5 mr-2 text-indigo-500" />
               2. Analyze and Predict
             </h2>
 
-            {/* Error Message */}
+          
             {error && (
               <div className="p-3 bg-red-100 border-l-4 border-red-500 text-red-700 rounded-lg mb-4 flex items-center">
                 <XCircle className="w-5 h-5 mr-2" />
@@ -244,7 +243,7 @@ const App = () => {
               </div>
             )}
             
-            {/* Action Buttons */}
+         
             <div className="flex space-x-4 mb-6">
               <button
                 onClick={handlePredict}
@@ -278,7 +277,7 @@ const App = () => {
               </button>
             </div>
             
-            {/* Prediction Result */}
+          
             {prediction ? (
               <PredictionResult prediction={prediction} />
             ) : (
@@ -291,7 +290,7 @@ const App = () => {
               </div>
             )}
             
-            {/* Disclaimer */}
+           
             <div className="mt-6 text-xs text-gray-400 text-center">
               <p>.</p>
             </div>
