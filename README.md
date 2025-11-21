@@ -71,3 +71,8 @@ Backend preprocesses the image and passes it through the hybrid CNN model.
 Backend returns the predicted DR class.
 Frontend displays the result.
 
+<img width="1918" height="1008" alt="diabetic retinopathy main page" src="https://github.com/user-attachments/assets/7a284ab5-ae08-4318-a460-d25229cac5a2" />
+<img width="1912" height="1007" alt="diabetic retinopathy main page2" src="https://github.com/user-attachments/assets/4cfc7d80-ea69-410d-86ff-699c4e579e76" />
+<img width="1070" height="1220" alt="image" src="https://github.com/user-attachments/assets/1b614397-82f1-466c-bd15-b26962ab6535" />
+
+
