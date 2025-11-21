@@ -1,3 +1,5 @@
+<img width="1917" height="1006" alt="retinopathy diabeties 3" src="https://github.com/user-attachments/assets/13884000-f3e8-46de-8eae-1b06a465e5b2" />
+
 # Diabetic Retinopathy Detection Using a Hybrid CNN (ResNet50 + DenseNet121)
 
 This project implements an AI-based system for detecting Diabetic Retinopathy (DR) from retinal fundus images. The core of the system is a custom hybrid deep learning model that combines ResNet50 and DenseNet121 feature extractors. The project includes a Flask-based backend for model inference and a React (Vite) frontend for user interaction.
